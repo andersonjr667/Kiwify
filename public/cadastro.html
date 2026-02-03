@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro - Kiwify</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Confirme seus dados</h1>
+      <p class="subtitle">Preencha o formulário para concluir seu acesso.</p>
+
+      <div id="status" class="status"></div>
+
+      <form id="form" class="hidden">
+        <div class="field">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="field">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" required />
+        </div>
+        <div class="field">
+          <label for="objetivo">Objetivo</label>
+          <textarea id="objetivo" name="objetivo" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="/cadastro.js"></script>
+</body>
+</html>
